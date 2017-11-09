@@ -1,0 +1,267 @@
+body,div, ol,ul,li ,h1,h2,h3,h4,h5,h6,p,th,td,dl,dt,dd,form,fieldset,legend,input,textarea,select span{margin:0;padding:0;box-sizing:border-box;} 
+a{text-decoration:none;} 
+li{list-style:none;}
+img{border:none;}
+.r_main{
+	width: 100%;
+	height: 630px;
+}
+.r_main .rgst{
+	width: 1002px;
+	height: 630px;
+	margin: 0 auto;
+}.r_main .rgst h5{
+	color: #666666;
+	font-size: 20px;
+	height: 36px;
+	line-height: 36px;
+}
+.r_main .rgst .rgst_main{
+	width: 1002px;
+	height: 594px;
+	text-align: center;
+	border:10px solid #f2f2f2;
+	padding-left: 510px;
+	background: url(../images/register.png) no-repeat 50px 60px;
+	background-size:  404px 286px;
+}
+.r_main .rgst .rgst_main .rgst_bd{
+	width: 445px;
+	height: 286px;
+	text-align: right;
+	padding-right: 50px;
+	margin-top: 60px;
+	border-left: 1px solid #e2e2e2;
+}
+.rgst_main span{
+	font-size: 12px;
+	color: #78787b;
+}
+.rgst_main .rgst_bd input{
+	width: 260px; 
+	height: 30px;
+	margin-top: 16px;
+	border:none;
+	border:1px solid #dcdcdc;
+}
+.rgst_main form #name{
+	background: url(../images/name.jpg) no-repeat 240px center;
+}
+.rgst_main #cpassword{
+	width: 130px;
+}
+.rgst_main #password{
+	background: url(../images/password.jpg) no-repeat 240px center;
+}
+.rgst_main #repassword{
+	background: url(../images/password.jpg) no-repeat 240px center;
+}
+.rgst_main #btn1{
+	width: 104px;
+	height: 30px;
+	font-size: 12px;
+	margin-left: 14px;
+}
+.rgst_main #cbox{
+	width: 18px;
+	height: 18px;
+}
+.rgst_main form>input{
+	margin-top: 16px;
+}
+.rgst_main #btn2{
+	width: 250px;
+	height: 35px;
+	font-size: 12px;
+	color: #ffffff;
+	background: #d61f1f;
+	margin-top: 16px;
+	border:none;
+}
+/*footer*/
+.foot{
+	width: 100%;
+	height: 640px;
+}
+.foot ._pro{
+	width: 100%;
+	height: 156px;
+	border-bottom: 1px solid #dcdcdc;
+}
+.foot .pro{
+	width: 688px;
+	height: 156px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.pro dl{
+	width: 87px;
+	height: 97px;
+	text-align: center;
+	margin-top: 30px;
+}
+.pro dl dt img{
+	width: 65px;
+	height: 67px;
+}
+.pro dl dd{
+	margin-top: 8px;
+	font-size: 12px;
+	color: #c2aba3;
+}
+.detail{
+	width: 1200px;
+	height: 320px;
+	margin:0 auto;
+}
+.detail .dl_top{
+	height: 180px;
+	margin-top: 22px;
+}
+.dl_top .tel{
+	width: 138px;
+	height: 180px;
+	float: left;
+	margin-left:30px;
+}
+.dl_top .tel h5{
+	height: 24px;
+	line-height: 24px;
+	color: #666666;
+	font-size: 16px;
+	padding-left: 30px;
+	background: url(../images/tel.jpg) no-repeat 0 0;
+}
+.dl_top .tel .b_tel{
+	color: #ff6657;
+	font-size: 14px;
+	height: 47px;
+	line-height: 47px;
+}
+.dl_top .tel .q_1{
+	height: 19px;
+	line-height: 19px;
+	padding-left: 64px;
+	background: url(../images/qq.jpg) no-repeat 0 0;
+}
+.dl_top .tel .q_2{
+	height: 19px;
+	line-height: 19px;
+	margin-top: 8px;
+	padding-left: 64px;
+	background: url(../images/qq.jpg) no-repeat 0 0;
+}
+.dl_top .tel a{
+	color: #333333;
+	font-size: 10px;
+	float: left;
+}
+.dl_top ._detail{
+	width: 1022px;
+	height: 180px;
+	float: left;
+	margin-left: 10px;
+	display: flex;
+	justify-content: space-around;
+}
+.dl_top ._detail ul{
+	width: 140px;
+	height: 180px;
+}
+.dl_top ._detail li{
+	height: 30px;
+	line-height:30px;
+	font-size: 6px;
+	color: #666666;
+	list-style: square;
+	list-style-position: inside; 
+}
+._detail li a{
+	font-size: 12px;
+	color: #666666;
+}
+.dl_top ._detail .l1{
+	height: 35px;
+	line-height: 30px;
+	font-size: 16px;
+	color: #666666;
+	list-style: none;
+	border-bottom: 1px solid #dcdcdc;
+}
+.dl_bt{
+	width: 245px;
+	height: 102px;
+	margin: 0 auto;
+	padding-left: 103px;
+	background: url(../images/f_ewm.png) no-repeat 0 0;
+}
+.dl_bt .p1{
+	font-size: 14px;
+	color: #000000;
+	padding-top: 18px;
+	text-align: center;
+}
+.dl_bt .p2{
+	font-size: 12px;
+	color: #333333;
+	padding-top: 18px;
+	text-align: center;
+}
+.fbg{
+	width: 100%;
+	height: 12px;
+	background: url(../images/fbg.jpg) repeat;
+}
+.fbt{
+	width: 1200px;
+	height: 76px;
+	line-height:38px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 10px;
+}
+.fbt a{
+	color: #666666;
+	font-size: 12px;
+	font-family: "新宋体";
+}
+.fbt span{
+	color: #666666;
+	font-size: 12px;
+	margin: 0 14px;
+	font-family: "宋体";
+}
+.fbt p{
+	color: #666666;
+	font-size: 12px;
+}
+.fbt p span{
+	color: #000000;
+	font-size: 12px;
+}
+.cart{
+	width: : 55px;
+	height: 174px;
+	position: fixed;
+	bottom: 96px;
+	right: 10px;
+}
+.cart li{
+	width: 55px;
+	height: 60px;
+	border-bottom: 2px solid #ffffff;
+}
+.cart #fh_top{
+	border: none;
+	height: 58px;
+}
+.cart li a{
+	float: left;
+	width: 55px;
+	height: 58px;
+}
+.cart li a img{
+	width: 55px;
+	height: 58px;
+}

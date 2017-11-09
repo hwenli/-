@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/order.css">
+	<script type="text/javascript" src="lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="js/order.js"></script>
+</head>
+<body>
+	<!-- header -->
+	<!-- <div class="head"></div>
+		<script>
+			$('.head').load('html/header.html')
+		</script> -->
+	<div class="head">
+		<div class="head_l"><span>你好! 欢迎光临春之花零食大世界</span></div>
+		<div class="head_r">
+			<a id="login" href="javascript:void(0);">[ 登录 ]</a>
+			<a id="register" href="javascript:void(0);">[ 注册 ]</a>
+			<a href="javascript:void(0);">我的订单</a><span>|</span>
+			<a href="javascript:void(0);">我的收藏夹</a><span>|</span>
+			<a href="javascript:void(0);">帮助中心</a><span>|</span>
+			<a href="javascript:void(0);">品牌及门店</a><span>|</span>
+			<a href="javascript:void(0);">营业证件</a>
+		</div>
+	</div>
+
+	 <!-- logo -->
+	<!-- <div class="logo"></div>
+	<script>
+		$('.logo').load('html/head.html');
+	</script> -->
+	<div class="logo">
+		<div class="lg_m">
+			<div class="lg_m_t">
+				<div class="lg_lg">
+					<h1><a href="javascript:void(0);"><span>春之花</span></a></h1>
+					<a href="javascript:void(0);">www.czhmall.com</a>
+				</div>
+				<form class="lg_md">
+					<input class="search_in" type="text" placeholder="输入搜索关键字">
+					<input class="search" type="submit" value="搜索">
+				</form>
+				<div class="lg_rt">
+					<a href="javascript:void(0);"></a>
+					<span>0</span>
+				</div>
+			</div>
+		</div>
+		<div class="lg_m_b">购满购满99元（广东省内）或159元（广东省外）包邮！</div>
+	</div>
+
+	<!-- nav -->
+	<div class="nav">
+		<div class="nav_m">
+			<div class="select">所有产品分类</div>
+			<!-- <div class="select_b">
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+			</div> -->
+			<div class="nav_nav">
+				<a href="#">首页</a><span>|</span>
+				<a href="#">进口食品</a><span>|</span>
+				<a href="#">散装零食</a><span>|</span>
+				<a href="#">新货上架</a><span>|</span>
+				<a href="#">特价商品</a><span>|</span>
+				<a href="#">热销推荐</a><span>|</span>
+				<a href="#">品牌专区</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="order">
+		<h5>首页<a href="#"> > 用户中心</a></h5>
+		<div class="order_lt">
+			<h3>会员中心<span>/ MEMBER CENTER</span></h3>
+			<div class="order_meg">
+				<h6>个人中心</h6>
+				<p><a href="#">个人资料</a></p>
+				<p><a href="#">密码管理</a></p>
+				<p><a href="#">地址管理</a></p>
+				<h6>交易管理</h6>
+				<p><a href="#">我的订单</a></p>
+				<p><a href="#">退货列表</a></p>
+				<p><a href="#">我的收藏</a></p>
+				<p><a href="#">我的评论</a></p>
+			</div>
+			<h3>新品推荐<span>/ NEW ARRIVAL</span></h3>
+			<div class="order_list">
+					<dl>
+						<dt><img src="images/nn-1.jpg"></dt>
+						<dd>135g茱蒂丝纯花生酱三明治夹心饼干</dd>
+						<dd>¥11.50</dd>
+					</dl>
+					<dl>
+						<dt><img src="images/nn-2.jpg"></dt>
+						<dd>135g茱蒂丝纯花生酱三明治夹心饼干</dd>
+						<dd>¥11.50</dd>
+					</dl>
+			</div>
+		</div>
+		<div class="order_rt">
+			<div class="order_bd">
+				<h5>我的订单</h5>
+
+			</div>
+			<div class="order_con"></div>
+		</div>
+	</div>
+	<!-- cart -->
+	<ul class="cart">
+		<li><a href="#"><img src="images/sy_car.png"></a></li>
+		<li><a href="#"><img src="images/sy_qq.png"></a></li>
+		<li><a href="#" id="fh_top"><img src="images/top.png"></a></li>
+	</ul>
+	<!-- footer -->
+	<div class="foot">
+		<div class="_pro">
+			<div class="pro">
+				<dl>
+					<dt><img src="images/f_zp.png"></dt>
+					<dd>正货承诺</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/f_cx.png"></dt>
+					<dd>诚信卖家</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/f_pp.png"></dt>
+					<dd>20年知名品牌</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/f_bz.png"></dt>
+					<dd>服务保障</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/f_jg.png"></dt>
+					<dd>价格最低</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="detail">
+			<div class="dl_top">
+				<div class="tel">
+					<h5>咨询热线</h5>
+					<p class="b_tel">020-83261813</p>
+					<p class="q_1"><a href="#">2713708882</a></p>
+					<p class="q_2"><a href="#">1743177632</a></p>
+				</div>
+				<div class="_detail">
+					<ul>
+						<li class="l1">新生指南</li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">订单状态说明</a></li>
+					</ul>
+					<ul>
+						<li class="l1">支付方式</li>
+						<li><a href="#">支付宝</a></li>
+						<li><a href="#">银联在线支付</a></li>
+					</ul>
+					<ul>
+						<li class="l1">配送方式</li>
+						<li><a href="#">快递运送</a></li>
+					</ul>
+					<ul>
+						<li class="l1">售后服务</li>
+						<li><a href="#">退款说明</a></li>
+						<li><a href="#">退换货流程</a></li>
+						<li><a href="#">退换货政策</a></li>
+						<li><a href="#">营业证件</a></li>
+					</ul>
+					<ul>
+						<li class="l1">购物帮助</li>
+						<li><a href="#">联系方式</a></li>
+						<li><a href="#">找回密码</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">投诉建议</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dl_bt">
+				<p class="p1">春之花官方微信号</p>
+				<p class="p2">扫一扫&nbsp;&nbsp;获取最新咨询</p>
+			</div>
+		</div>
+		<div class="fbg"></div>
+		<div class="fbt">
+			<a href="#">关于春之花</a><span>|</span>
+			<a href="#">联系我们</a><span>|</span>
+			<a href="#">品牌介绍</a><span>|</span>
+			<a href="#">新货上架</a><span>|</span>
+			<a href="#">特惠专区</a><span>|</span>
+			<a href="#">热销团购</a><span>|</span>
+			<a href="#">限时抢购</a><span>|</span>
+			<a href="#">网站建设：佰维网络</a>
+			<p>广州市春芝花贸易有限公司 版权所有 地址:广州市东风中路越秀城市广场北塔13层<span>粤ICP备14026488号</span></p>
+		</div>
+	</div>
+</body>
+</html>

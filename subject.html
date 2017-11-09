@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/subject.css">
+	<script type="text/javascript" src="lib/jquery/jquery-1.12.4.min.js"></script>
+	<script src="js/subject.js"></script>
+</head>
+<body>
+	<div class="head">
+		<div class="head_l"><span>你好! 欢迎光临春之花零食大世界</span></div>
+		<div class="head_r">
+			<a id="login" href="javascript:void(0);">[ 登录 ]</a>
+			<a id="register" href="javascript:void(0);">[ 注册 ]</a>
+			<a href="javascript:void(0);">我的订单</a><span>|</span>
+			<a href="javascript:void(0);">我的收藏夹</a><span>|</span>
+			<a href="javascript:void(0);">帮助中心</a><span>|</span>
+			<a href="javascript:void(0);">品牌及门店</a><span>|</span>
+			<a href="javascript:void(0);">营业证件</a>
+		</div>
+	</div>
+
+	 <!-- logo -->
+	<!-- <div class="logo"></div>
+	<script>
+		$('.logo').load('html/head.html');
+	</script> -->
+	<div class="logo">
+		<div class="lg_m">
+			<div class="lg_m_t">
+				<div class="lg_lg">
+					<h1><a href="javascript:void(0);"><span>春之花</span></a></h1>
+					<a href="javascript:void(0);">www.czhmall.com</a>
+				</div>
+				<form class="lg_md">
+					<input class="search_in" type="text" placeholder="输入搜索关键字">
+					<input class="search" type="submit" value="搜索">
+				</form>
+				<div class="lg_rt">
+					<a href="javascript:void(0);"></a>
+					<span>0</span>
+				</div>
+			</div>
+		</div>
+		<div class="lg_m_b">购满购满99元（广东省内）或159元（广东省外）包邮！</div>
+	</div>
+
+	<!-- nav -->
+	<div class="nav">
+		<div class="nav_m">
+			<div class="select">所有产品分类</div>
+			<!-- <div class="select_b">
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+				<a href="#">饼干</a>
+			</div> -->
+			<div class="nav_nav">
+				<a href="#">首页</a><span>|</span>
+				<a href="#">进口食品</a><span>|</span>
+				<a href="#">散装零食</a><span>|</span>
+				<a href="#">新货上架</a><span>|</span>
+				<a href="#">特价商品</a><span>|</span>
+				<a href="#">热销推荐</a><span>|</span>
+				<a href="#">品牌专区</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- banner -->
+	<div class="banner">
+		<div id="container">
+			<ul>
+				<li style="display: block;"><img src="images/baner-1.jpg"></li>
+				<li><img src="images/baner-2.jpg"></li>
+				<li><img src="images/baner-3.jpg"></li>
+				<li><img src="images/baner-4.jpg"></li>
+				<li><img src="images/baner-5.jpg"></li>
+			</ul>
+			<div id="pages">
+				<a href="#" class="current">缤纷零食</a>
+				<a href="#">雅米熊猫</a>
+				<a href="#">美好时光</a>
+				<a href="#">手机商城</a>
+				<a href="#">薯期上新</a>
+			</div>
+			<div id="prev">&lt;</div>
+			<div id="next">&gt;</div>
+		</div>
+	</div>
+	<div class="sub_nav">
+		<h5>首页&nbsp;&nbsp;>&nbsp;&nbsp;巧克力</h5>
+		<div class="sub_main">
+			<h4>巧克力<span> - 商品筛选</span></h4>
+			<p>
+				<a href="#">品牌：</a>
+				<i id="current">全部</i>
+				<i>德芙</i>
+				<i>好时</i>
+				<i>明治</i>
+				<i>士力架</i>
+				<i>M&M'S巧克力豆</i>
+				<i>贝客诗</i>
+				<i>麦丽素</i>
+				<i>费列罗</i>
+				<i>Hello Kitty</i>
+			</p>
+			<p>
+				<a href="#">价格：</a>
+				<i id="current">全部</i>
+				<i>1-10元</i>
+				<i>11-30元</i>
+				<i>31-50元</i>
+				<i>51-100元</i>
+				<i>101-300元</i>
+				<i>300以上</i>
+				<input type="text" value="0" id="fst">
+				<span>-</span>
+				<input type="text" value="0">
+				<button>确定</button>
+			</p>
+		</div>
+	</div>
+	<div class="sub_content">
+		<h5>排序：<a href="#">推荐</a><a href="#">价格</a><a href="#">时间</a><a href="#">评论数</a></h5>
+		<div class="sub_con">
+			<dl>
+				<dt><img src="images/chocolate_1.jpg"></dt>
+				<dd id="dtl">30g贝客诗蓝莓和阿萨果味夹心黑巧克力</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_2.jpg"></dt>
+				<dd id="dtl">25g麦丽素</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_3.jpg"></dt>
+				<dd id="dtl">53G德芙心印巧克力（牛奶+苹果混合口味）</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_4.jpg"></dt>
+				<dd id="dtl">100gM&M's花生牛奶巧克力豆 【三种包装！随机发货！】</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_5.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_6.jpg"></dt>
+				<dd id="dtl">30g贝客诗蓝莓和阿萨果味夹心黑巧克力</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_7.jpg"></dt>
+				<dd id="dtl">25g麦丽素</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_8.jpg"></dt>
+				<dd id="dtl">53G德芙心印巧克力（牛奶+苹果混合口味）</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_9.jpg"></dt>
+				<dd id="dtl">100gM&M's花生牛奶巧克力豆 【三种包装！随机发货！】</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_10.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_11.jpg"></dt>
+				<dd id="dtl">30g贝客诗蓝莓和阿萨果味夹心黑巧克力</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_12.jpg"></dt>
+				<dd id="dtl">25g麦丽素</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_13.jpg"></dt>
+				<dd id="dtl">53G德芙心印巧克力（牛奶+苹果混合口味）</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_14.jpg"></dt>
+				<dd id="dtl">100gM&M's花生牛奶巧克力豆 【三种包装！随机发货！】</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_15.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_16.jpg"></dt>
+				<dd id="dtl">30g贝客诗蓝莓和阿萨果味夹心黑巧克力</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_17.jpg"></dt>
+				<dd id="dtl">25g麦丽素</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_18.jpg"></dt>
+				<dd id="dtl">53G德芙心印巧克力（牛奶+苹果混合口味）</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_19.jpg"></dt>
+				<dd id="dtl">100gM&M's花生牛奶巧克力豆 【三种包装！随机发货！】</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_20.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_21.jpg"></dt>
+				<dd id="dtl">30g贝客诗蓝莓和阿萨果味夹心黑巧克力</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_22.jpg"></dt>
+				<dd id="dtl">25g麦丽素</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_23.jpg"></dt>
+				<dd id="dtl">53G德芙心印巧克力（牛奶+苹果混合口味）</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_24.jpg"></dt>
+				<dd id="dtl">100gM&M's花生牛奶巧克力豆 【三种包装！随机发货！】</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_25.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_26.jpg"></dt>
+				<dd id="dtl">30g贝客诗蓝莓和阿萨果味夹心黑巧克力</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_27.jpg"></dt>
+				<dd id="dtl">25g麦丽素</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_28.jpg"></dt>
+				<dd id="dtl">53G德芙心印巧克力（牛奶+苹果混合口味）</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_29.jpg"></dt>
+				<dd id="dtl">100gM&M's花生牛奶巧克力豆 【三种包装！随机发货！】</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_30.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_31.jpg"></dt>
+				<dd id="dtl">30g贝客诗蓝莓和阿萨果味夹心黑巧克力</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_32.jpg"></dt>
+				<dd id="dtl">25g麦丽素</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_33.jpg"></dt>
+				<dd id="dtl">53G德芙心印巧克力（牛奶+苹果混合口味）</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_34.jpg"></dt>
+				<dd id="dtl">100gM&M's花生牛奶巧克力豆 【三种包装！随机发货！】</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_35.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_36.jpg"></dt>
+				<dd id="dtl">30g贝客诗蓝莓和阿萨果味夹心黑巧克力</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_37.jpg"></dt>
+				<dd id="dtl">25g麦丽素</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_38.jpg"></dt>
+				<dd id="dtl">53G德芙心印巧克力（牛奶+苹果混合口味）</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_39.jpg"></dt>
+				<dd id="dtl">100gM&M's花生牛奶巧克力豆 【三种包装！随机发货！】</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_40.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_41.jpg"></dt>
+				<dd id="dtl">30g贝客诗蓝莓和阿萨果味夹心黑巧克力</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_42.jpg"></dt>
+				<dd id="dtl">25g麦丽素</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_43.jpg"></dt>
+				<dd id="dtl">53G德芙心印巧克力（牛奶+苹果混合口味）</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_44.jpg"></dt>
+				<dd id="dtl">100gM&M's花生牛奶巧克力豆 【三种包装！随机发货！】</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_45.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_46.jpg"></dt>
+				<dd id="dtl">30g贝客诗蓝莓和阿萨果味夹心黑巧克力</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_47.jpg"></dt>
+				<dd id="dtl">25g麦丽素</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_48.jpg"></dt>
+				<dd id="dtl">53G德芙心印巧克力（牛奶+苹果混合口味）</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_49.jpg"></dt>
+				<dd id="dtl">100gM&M's花生牛奶巧克力豆 【三种包装！随机发货！】</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_50.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_51.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_52.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_53.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_54.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt><img src="images/chocolate_55.jpg"></dt>
+				<dd id="dtl">30g3粒装拉斐尔脆雪柔椰蓉扁桃仁糖果酥球</dd>
+				<dd id="mny">¥8.00</dd>
+				<dd id="crt">
+					<input type="text" value="1">
+					<div>
+						<p><a href="#">▲</a></p>
+						<p><a href="#">▼</a></p>
+					</div>
+					<a href="#" id="shop">立即购买</a>
+					<a href="#" id="collect">点击收藏</a>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="foot">
+		<div class="_pro">
+			<div class="pro">
+				<dl>
+					<dt><img src="images/f_zp.png"></dt>
+					<dd>正货承诺</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/f_cx.png"></dt>
+					<dd>诚信卖家</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/f_pp.png"></dt>
+					<dd>20年知名品牌</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/f_bz.png"></dt>
+					<dd>服务保障</dd>
+				</dl>
+				<dl>
+					<dt><img src="images/f_jg.png"></dt>
+					<dd>价格最低</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="detail">
+			<div class="dl_top">
+				<div class="tel">
+					<h5>咨询热线</h5>
+					<p class="b_tel">020-83261813</p>
+					<p class="q_1"><a href="#">2713708882</a></p>
+					<p class="q_2"><a href="#">1743177632</a></p>
+				</div>
+				<div class="_detail">
+					<ul>
+						<li class="l1">新生指南</li>
+						<li><a href="#">新会员注册</a></li>
+						<li><a href="#">用户登录</a></li>
+						<li><a href="#">购物流程</a></li>
+						<li><a href="#">订单状态说明</a></li>
+					</ul>
+					<ul>
+						<li class="l1">支付方式</li>
+						<li><a href="#">支付宝</a></li>
+						<li><a href="#">银联在线支付</a></li>
+					</ul>
+					<ul>
+						<li class="l1">配送方式</li>
+						<li><a href="#">快递运送</a></li>
+					</ul>
+					<ul>
+						<li class="l1">售后服务</li>
+						<li><a href="#">退款说明</a></li>
+						<li><a href="#">退换货流程</a></li>
+						<li><a href="#">退换货政策</a></li>
+						<li><a href="#">营业证件</a></li>
+					</ul>
+					<ul>
+						<li class="l1">购物帮助</li>
+						<li><a href="#">联系方式</a></li>
+						<li><a href="#">找回密码</a></li>
+						<li><a href="#">常见问题</a></li>
+						<li><a href="#">投诉建议</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="dl_bt">
+				<p class="p1">春之花官方微信号</p>
+				<p class="p2">扫一扫&nbsp;&nbsp;获取最新咨询</p>
+			</div>
+		</div>
+		<div class="fbg"></div>
+		<div class="fbt">
+			<a href="#">关于春之花</a><span>|</span>
+			<a href="#">联系我们</a><span>|</span>
+			<a href="#">品牌介绍</a><span>|</span>
+			<a href="#">新货上架</a><span>|</span>
+			<a href="#">特惠专区</a><span>|</span>
+			<a href="#">热销团购</a><span>|</span>
+			<a href="#">限时抢购</a><span>|</span>
+			<a href="#">网站建设：佰维网络</a>
+			<p>广州市春芝花贸易有限公司 版权所有 地址:广州市东风中路越秀城市广场北塔13层<span>粤ICP备14026488号</span></p>
+		</div>
+	</div>
+	<!-- cart -->
+	<ul class="cart">
+		<li><a href="#"><img src="images/sy_car.png"></a></li>
+		<li><a href="#"><img src="images/sy_qq.png"></a></li>
+		<li><a href="#" id="fh_top"><img src="images/top.png"></a></li>
+	</ul>
+</body>
+</html>
